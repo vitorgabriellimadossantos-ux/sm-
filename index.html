@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Básico -->
+    <title>SM Consultoria Jurídica | Advocacia Estratégica no DF e Brasil</title>
+    <meta name="description" content="Escritório de advocacia em Brasília (DF) com atendimento online nacional. Especialistas em Direito Penal, Administrativo e Cível.">
+    
+    <!-- Fontes Modernas: Montserrat (Títulos) e Inter (Textos) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Ícones (FontAwesome) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Tailwind CSS (Framework de Design) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0D2E1F',    // Verde Escuro (Autoridade)
+                        gold: '#DBAD29',       // Dourado (Sofisticação)
+                        darkBg: '#0a0a0a',     // Fundo Escuro
+                        lightBg: '#f9fafb',    // Fundo Claro/Gelo
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Montserrat', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans bg-white text-gray-800 antialiased selection:bg-gold selection:text-white">
+
+    <!-- Botão Flutuante do WhatsApp -->
+    <a href="https://wa.me/5561996988765" target="_blank" class="fixed bottom-6 right-6 bg-[#25D366] text-white p-4 rounded-full shadow-[0_0_20px_rgba(37,211,102,0.4)] hover:scale-110 transition-transform z-50 flex items-center justify-center text-3xl" aria-label="Fale conosco no WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- NAVBAR VERDE COM LETRAS DOURADAS -->
+    <nav class="bg-primary text-gold fixed w-full z-40 top-0 shadow-md border-b border-gold/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16"> <!-- Altura da barra mantida elegante -->
+                
+                <!-- Logo Grande -->
+                <div class="flex-shrink-0 flex items-center h-full py-2">
+                    <a href="#" class="flex items-center h-full">
+                        <img src="./logo.PNG" alt="Logo SM Consultoria" class="h-full w-auto object-contain transform scale-150 origin-left ml-4"> 
+                    </a>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#sobre" class="text-sm font-semibold tracking-wide hover:text-white transition-colors">SOBRE</a>
+                    <a href="#areas" class="text-sm font-semibold tracking-wide hover:text-white transition-colors">ÁREAS DE ATUAÇÃO</a>
+                    <a href="#diferenciais" class="text-sm font-semibold tracking-wide hover:text-white transition-colors">DIFERENCIAIS</a>
+                    <a href="#equipe" class="text-sm font-semibold tracking-wide hover:text-white transition-colors">EQUIPE</a>
+                    <!-- Botão Fale Conosco em Dourado -->
+                    <a href="https://wa.me/5561996988765" class="bg-gold text-primary font-bold px-6 py-2 rounded shadow hover:bg-yellow-500 transition-colors">
+                        Fale Conosco
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-gold hover:text-white focus:outline-none p-2">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Panel -->
+        <div id="mobile-menu" class="hidden md:hidden bg-primary border-t border-gold/20">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#sobre" class="block px-3 py-2 text-base font-medium text-gold hover:text-white hover:bg-primary/80 rounded-md">Sobre</a>
+                <a href="#areas" class="block px-3 py-2 text-base font-medium text-gold hover:text-white hover:bg-primary/80 rounded-md">Áreas de Atuação</a>
+                <a href="#diferenciais" class="block px-3 py-2 text-base font-medium text-gold hover:text-white hover:bg-primary/80 rounded-md">Diferenciais</a>
+                <a href="#equipe" class="block px-3 py-2 text-base font-medium text-gold hover:text-white hover:bg-primary/80 rounded-md">Equipe</a>
+                <a href="https://wa.me/5561996988765" class="block px-3 py-2 text-base font-bold text-primary bg-gold rounded-md text-center mt-4">
+                    <i class="fab fa-whatsapp mr-2"></i> Fale Conosco
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- SEÇÃO 1: HERO SECTION -->
+    <section class="relative pt-28 pb-20 lg:pt-32 lg:pb-32 bg-lightBg overflow-hidden min-h-[90vh] flex items-center">
+        <!-- Background da Foto 100% Nítida (Lado Direito) -->
+        <div class="absolute inset-0 bg-[url('./foto-principal.PNG')] bg-cover bg-[position:70%_center] lg:bg-right"></div>
+        
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10 w-full">
+            <div class="lg:w-1/2">
+                <!-- Super-Tag -->
+                <div class="inline-flex items-center space-x-2 bg-primary/10 border border-primary/20 px-4 py-2 rounded-full mb-8">
+                    <span class="w-2 h-2 rounded-full bg-gold animate-pulse"></span>
+                    <span class="text-sm md:text-base font-semibold tracking-wider text-primary uppercase">Advocacia Especializada • Atendimento Nacional</span>
+                </div>
+                
+                <!-- Headline Principal -->
+                <h1 class="font-heading text-5xl md:text-6xl lg:text-7xl font-bold text-primary leading-tight mb-6">
+                    Defesa Estratégica e Atendimento Humanizado para Proteger Seus Direitos.
+                </h1>
+                
+                <!-- Subheadline Modificada para Dourado/Amarelo -->
+                <p class="text-xl md:text-2xl text-gold font-medium mb-10 max-w-2xl leading-relaxed drop-shadow-sm">
+                    Atuação artesanal e altamente qualificada em <strong class="font-bold text-gold">Direito Penal, Administrativo e Cível</strong>. Sediados no Distrito Federal, com atendimento online ágil e seguro para todo o Brasil.
+                </p>
+                
+                <!-- CTAs: Botão Verde + Link Limpo do WhatsApp -->
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-8 items-center">
+                    <a href="https://wa.me/5561996988765" class="bg-primary text-white font-bold text-lg px-8 py-4 rounded shadow-lg hover:bg-[#1a4a35] hover:scale-105 transition-all flex items-center justify-center text-center w-full sm:w-auto">
+                        Falar com um Especialista Agora
+                    </a>
+                    
+                    <!-- Botão de WhatsApp Sem Fundo (Apenas Texto e Ícone) -->
+                    <a href="https://wa.me/5561996988765" class="text-primary font-bold text-xl flex items-center hover:text-[#1a4a35] hover:-translate-y-1 transition-all">
+                        <i class="fab fa-whatsapp text-3xl text-[#25D366] mr-3 drop-shadow-sm"></i>
+                        (61) 99698-8765
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 2: SOBRE O ESCRITÓRIO -->
+    <section id="sobre" class="py-20 lg:py-28 bg-lightBg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <!-- Imagem -->
+                <div class="relative">
+                    <div class="aspect-[4/5] rounded overflow-hidden shadow-2xl relative">
+                        <img src="./foto-sobre.PNG.jpeg" alt="Escritório SM Consultoria" class="w-full h-full object-cover">
+                    </div>
+                    <!-- Elemento decorativo -->
+                    <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-gold/20 rounded -z-10"></div>
+                    <div class="absolute -top-6 -left-6 w-32 h-32 bg-primary/10 border border-primary/20 rounded -z-10"></div>
+                </div>
+
+                <!-- Conteúdo -->
+                <div>
+                    <h2 class="font-heading text-sm font-bold text-gold tracking-widest uppercase mb-3">Nossa História</h2>
+                    <h3 class="font-heading text-3xl md:text-4xl font-bold text-primary mb-6">A SM Consultoria: Onde a Tradição Encontra a Inovação</h3>
+                    
+                    <div class="space-y-6 text-gray-700 leading-relaxed">
+                        <p>
+                            A SM Consultoria nasceu da convicção de que a advocacia de alto padrão não precisa ser distante do cliente. Sediados no coração político e jurídico do país, o <strong>Distrito Federal</strong>, construímos nossa base na defesa implacável dos interesses de nossos clientes, combinando rigor técnico com um atendimento humanizado e transparente.
+                        </p>
+                        <p>
+                            Não tratamos processos de forma massificada. Cada demanda é um projeto único que recebe atenção artesanal, com soluções jurídicas desenhadas sob medida para proteger seu patrimônio, sua liberdade e sua paz de espírito.
+                        </p>
+                    </div>
+
+                    <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div class="bg-white p-6 rounded shadow-sm border border-gray-100 border-l-4 border-l-gold">
+                            <h4 class="font-heading font-bold text-primary mb-2 flex items-center"><i class="fas fa-bullseye text-gold mr-2"></i> Nossa Missão</h4>
+                            <p class="text-sm text-gray-600">Proporcionar segurança jurídica e soluções de excelência, atuando com agilidade e proximidade, onde o cliente estiver.</p>
+                        </div>
+                        <div class="bg-white p-6 rounded shadow-sm border border-gray-100 border-l-4 border-l-primary">
+                            <h4 class="font-heading font-bold text-primary mb-2 flex items-center"><i class="fas fa-balance-scale text-primary mr-2"></i> Nossos Valores</h4>
+                            <p class="text-sm text-gray-600">Ética inegociável, sigilo absoluto, foco em resultados, combate e defesa estratégica.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 3: ÁREAS DE ATUAÇÃO -->
+    <section id="areas" class="py-20 lg:py-28 bg-white border-t border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="font-heading text-sm font-bold text-gold tracking-widest uppercase mb-3">Especialidades Jurídicas</h2>
+                <h3 class="font-heading text-3xl md:text-4xl font-bold text-primary mb-6">Atuação Incisiva e Estratégica</h3>
+                <p class="text-gray-600">Focamos nas áreas que demandam a maior expertise técnica e dedicação exclusiva, oferecendo suporte integral ao cliente.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 1: Direito Penal -->
+                <div class="bg-primary/5 rounded-lg p-8 hover:shadow-xl hover:bg-primary/10 transition-all border border-primary/10 hover:border-gold/50 group relative overflow-hidden">
+                    <div class="w-14 h-14 bg-primary text-gold rounded-full flex items-center justify-center text-2xl mb-6 shadow-md group-hover:scale-110 transition-transform">
+                        <i class="fas fa-gavel"></i>
+                    </div>
+                    <h4 class="font-heading text-xl font-bold text-primary mb-4">Direito Penal</h4>
+                    <p class="text-gray-600 mb-6 text-sm leading-relaxed">
+                        Atuação combativa em defesa da sua liberdade e garantias fundamentais. Intervenção imediata em todas as fases da persecução penal, desde inquéritos até instâncias superiores.
+                    </p>
+                    <ul class="text-sm text-gray-700 space-y-2 mb-8">
+                        <li class="flex items-start"><i class="fas fa-check text-gold mt-1 mr-2"></i> Acompanhamento 24h (DF)</li>
+                        <li class="flex items-start"><i class="fas fa-check text-gold mt-1 mr-2"></i> Impetração de Habeas Corpus</li>
+                        <li class="flex items-start"><i class="fas fa-check text-gold mt-1 mr-2"></i> Defesa em crimes complexos</li>
+                    </ul>
+                    <a href="https://wa.me/5561996988765?text=Olá, preciso de um advogado na área Criminal." class="inline-block text-primary font-bold border-b-2 border-gold pb-1 hover:text-gold transition-colors">Consultar Advogado Penal <i class="fas fa-arrow-right ml-1 text-sm"></i></a>
+                </div>
+
+                <!-- Card 2: Direito Administrativo -->
+                <div class="bg-primary/5 rounded-lg p-8 hover:shadow-xl hover:bg-primary/10 transition-all border border-primary/10 hover:border-gold/50 group relative overflow-hidden">
+                    <div class="w-14 h-14 bg-primary text-gold rounded-full flex items-center justify-center text-2xl mb-6 shadow-md group-hover:scale-110 transition-transform">
+                        <i class="fas fa-file-contract"></i>
+                    </div>
+                    <h4 class="font-heading text-xl font-bold text-primary mb-4">Direito Administrativo</h4>
+                    <p class="text-gray-600 mb-6 text-sm leading-relaxed">
+                        Defesa sólida dos interesses de servidores públicos e empresas perante a Administração Pública. Atuação em PADs, licitações, concursos e improbidade.
+                    </p>
+                    <ul class="text-sm text-gray-700 space-y-2 mb-8">
+                        <li class="flex items-start"><i class="fas fa-check text-gold mt-1 mr-2"></i> Defesa em PAD e Sindicância</li>
+                        <li class="flex items-start"><i class="fas fa-check text-gold mt-1 mr-2"></i> Proteção da carreira do servidor</li>
+                        <li class="flex items-start"><i class="fas fa-check text-gold mt-1 mr-2"></i> Assessoria em licitações</li>
+                    </ul>
+                    <a href="https://wa.me/5561996988765?text=Olá, preciso de um advogado na área Administrativa." class="inline-block text-primary font-bold border-b-2 border-gold pb-1 hover:text-gold transition-colors">Falar sobre Direito Adm. <i class="fas fa-arrow-right ml-1 text-sm"></i></a>
+                </div>
+
+                <!-- Card 3: Direito Cível -->
+                <div class="bg-primary/5 rounded-lg p-8 hover:shadow-xl hover:bg-primary/10 transition-all border border-primary/10 hover:border-gold/50 group relative overflow-hidden">
+                    <div class="w-14 h-14 bg-primary text-gold rounded-full flex items-center justify-center text-2xl mb-6 shadow-md group-hover:scale-110 transition-transform">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h4 class="font-heading text-xl font-bold text-primary mb-4">Direito Cível</h4>
+                    <p class="text-gray-600 mb-6 text-sm leading-relaxed">
+                        Proteção ampla ao seu patrimônio e relações privadas. Consultoria e atuação em contratos, responsabilidade civil, família, sucessões e obrigações.
+                    </p>
+                    <ul class="text-sm text-gray-700 space-y-2 mb-8">
+                        <li class="flex items-start"><i class="fas fa-check text-gold mt-1 mr-2"></i> Resolução de conflitos</li>
+                        <li class="flex items-start"><i class="fas fa-check text-gold mt-1 mr-2"></i> Blindagem patrimonial</li>
+                        <li class="flex items-start"><i class="fas fa-check text-gold mt-1 mr-2"></i> Inventários e Divórcios</li>
+                    </ul>
+                    <a href="https://wa.me/5561996988765?text=Olá, preciso de um advogado na área Cível." class="inline-block text-primary font-bold border-b-2 border-gold pb-1 hover:text-gold transition-colors">Proteger Direitos Cíveis <i class="fas fa-arrow-right ml-1 text-sm"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 4: POR QUE ESCOLHER A SM CONSULTORIA? -->
+    <section id="diferenciais" class="py-20 lg:py-28 bg-primary relative overflow-hidden">
+        <!-- Padrão de fundo discreto -->
+        <div class="absolute inset-0 opacity-5 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-white via-transparent to-transparent"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-16">
+                <h2 class="font-heading text-sm font-bold text-gold tracking-widest uppercase mb-3">Diferenciais</h2>
+                <h3 class="font-heading text-3xl md:text-4xl font-bold text-white mb-6">A Diferença de uma Advocacia Estratégica</h3>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center p-6">
+                    <div class="w-16 h-16 mx-auto bg-primary border-2 border-gold text-gold rounded-full flex items-center justify-center text-3xl mb-6 shadow-[0_0_15px_rgba(219,173,41,0.3)]">
+                        <i class="fas fa-folder-open"></i>
+                    </div>
+                    <h4 class="font-heading text-white font-bold text-xl mb-3">Mais de 500 Casos</h4>
+                    <p class="text-gray-300 text-sm">Uma bagagem sólida de atuação prática, traduzida em soluções testadas e comprovadas.</p>
+                </div>
+                
+                <div class="text-center p-6">
+                    <div class="w-16 h-16 mx-auto bg-primary border-2 border-gold text-gold rounded-full flex items-center justify-center text-3xl mb-6 shadow-[0_0_15px_rgba(219,173,41,0.3)]">
+                        <i class="fas fa-laptop-house"></i>
+                    </div>
+                    <h4 class="font-heading text-white font-bold text-xl mb-3">Atendimento Nacional</h4>
+                    <p class="text-gray-300 text-sm">Quebramos barreiras. Reuniões por vídeo com total segurança para clientes de todo o Brasil.</p>
+                </div>
+
+                <div class="text-center p-6">
+                    <div class="w-16 h-16 mx-auto bg-primary border-2 border-gold text-gold rounded-full flex items-center justify-center text-3xl mb-6 shadow-[0_0_15px_rgba(219,173,41,0.3)]">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h4 class="font-heading text-white font-bold text-xl mb-3">Resposta Rápida</h4>
+                    <p class="text-gray-300 text-sm">O Direito não espera. Canais ágeis no WhatsApp para que você nunca fique sem suporte.</p>
+                </div>
+
+                <div class="text-center p-6">
+                    <div class="w-16 h-16 mx-auto bg-primary border-2 border-gold text-gold rounded-full flex items-center justify-center text-3xl mb-6 shadow-[0_0_15px_rgba(219,173,41,0.3)]">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h4 class="font-heading text-white font-bold text-xl mb-3">Contato Humanizado</h4>
+                    <p class="text-gray-300 text-sm">Você fala diretamente com quem resolve o seu problema. Sem burocracias e com clareza.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO 7: NOSSA EQUIPE -->
+    <section id="equipe" class="py-20 lg:py-28 bg-white border-t border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="order-2 md:order-1 relative">
+                    <!-- Foto de perfil -->
+                    <div class="relative max-w-md mx-auto">
+                        <img src="./foto-perfil.PNG" alt="Mariciana Aguiar - Advogada" class="rounded shadow-xl w-full h-auto object-cover">
+                        <!-- Frame dourado decorativo -->
+                        <div class="absolute inset-0 border-4 border-gold rounded transform translate-x-4 translate-y-4 -z-10"></div>
+                    </div>
+                </div>
+                
+                <div class="order-1 md:order-2">
+                    <h2 class="font-heading text-sm font-bold text-gold tracking-widest uppercase mb-3">Liderança Estratégica</h2>
+                    <h3 class="font-heading text-3xl md:text-4xl font-bold text-primary mb-2">Mariciana Aguiar</h3>
+                    <p class="text-gray-500 font-semibold mb-6">OAB: 63.815 OAB/DF</p>
+                    
+                    <div class="space-y-4 text-gray-700 leading-relaxed mb-8">
+                        <p>
+                            Advogada fundadora e líder estratégica da SM Consultoria. Com foco na advocacia de alto padrão, atua de forma artesanal, garantindo que cada cliente receba atenção personalizada.
+                        </p>
+                        <p>
+                            Especialista em identificar soluções rápidas e eficazes para cenários jurídicos complexos, construiu a reputação do escritório baseada na ética, transparência e alta taxa de êxito processual.
+                        </p>
+                        <p>
+                            Sob sua liderança, o escritório já conduziu mais de 500 casos, sempre priorizando o lado humano por trás de cada processo.
+                        </p>
+                    </div>
+
+                    <a href="https://www.instagram.com/mariciana_aguiar_advogada" target="_blank" class="inline-flex items-center text-primary font-bold hover:text-gold transition-colors">
+                        <i class="fab fa-instagram text-2xl mr-2"></i> Seguir no Instagram
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="py-20 bg-primary bg-[url('./foto-final.PNG')] bg-cover bg-center bg-blend-overlay border-b-4 border-gold text-center relative px-4">
+        <div class="relative z-10 max-w-3xl mx-auto">
+            <h2 class="font-heading text-3xl md:text-5xl font-bold text-white mb-6">Seu Direito Não Pode Esperar.</h2>
+            <p class="text-gray-300 text-lg mb-10">Adiar uma decisão jurídica pode custar sua liberdade, seu patrimônio ou sua carreira. Fale agora com nossa equipe e tenha a segurança de que seu caso está nas mãos de especialistas.</p>
+            <a href="https://wa.me/5561996988765" class="inline-block bg-gold text-primary font-bold text-xl px-10 py-5 rounded shadow-[0_0_30px_rgba(219,173,41,0.4)] hover:bg-yellow-500 hover:scale-105 transition-all">
+                Solicitar Análise do Meu Caso Agora
+            </a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-darkBg pt-16 pb-8 border-t border-gray-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+                <!-- Info -->
+                <div>
+                    <h3 class="font-heading text-2xl font-bold text-white mb-4">SM Consultoria<span class="text-gold">.</span></h3>
+                    <p class="text-gray-400 mb-6 text-sm">Defesa Estratégica e Atendimento Humanizado. Sediados em Brasília, atendendo todo o Brasil.</p>
+                    <p class="text-gray-500 text-xs">Mariciana Aguiar - 63.815 OAB/DF</p>
+                </div>
+                
+                <!-- Contatos -->
+                <div>
+                    <h4 class="font-heading text-lg font-bold text-white mb-4">Contatos</h4>
+                    <ul class="space-y-3 text-gray-400 text-sm">
+                        <li class="flex items-center"><i class="fab fa-whatsapp text-gold mr-3"></i> (61) 99698-8765</li>
+                        <li class="flex items-center"><i class="fas fa-envelope text-gold mr-3"></i> maricianaadvdf@gmail.com</li>
+                        <li class="flex items-center"><i class="fas fa-map-marker-alt text-gold mr-3"></i> Brasília - DF (Atendimento Online Nacional)</li>
+                    </ul>
+                </div>
+
+                <!-- Redes -->
+                <div>
+                    <h4 class="font-heading text-lg font-bold text-white mb-4">Redes Sociais</h4>
+                    <a href="https://www.instagram.com/mariciana_aguiar_advogada" target="_blank" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-white hover:bg-gold transition-colors">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 text-center md:text-left md:flex justify-between items-center text-xs text-gray-500">
+                <p>&copy; 2026 SM Consultoria Jurídica. Todos os direitos reservados.</p>
+                <p class="mt-2 md:mt-0">Site desenvolvido seguindo o Código de Ética da OAB.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts do Menu Mobile -->
+    <script>
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+
+        const mobileLinks = menu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                menu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
